@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Finder - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+        .search-bar input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .search-bar button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: #0056b3;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .restaurant-list, .cuisine-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .restaurant, .cuisine {
+            width: calc(33.333% - 20px);
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .restaurant img, .cuisine img {
+            width: 100%;
+            border-radius: 4px;
+        }
+        .restaurant h3, .cuisine h3 {
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zomato</h1>
+        <nav>
+         <a href="home.html">Home</a>
+            <a href="restaurents.html">Restaurants</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search for restaurants, cuisines, or locations">
+            <button type="button">Search</button>
+        </div>
+
+        <!-- Featured Restaurants -->
+        <div class="section">
+            <h2>Featured Restaurants</h2>
+            <div class="restaurant-list">
+                <div class="restaurant">
+                    <img src="8.jfif" alt="Restaurant Image">
+                    <h3>Restaurant Name 1</h3>
+                    <p>Address: 123 Food Street, City</p>
+                    <p>Rating: ★★★★☆</p>
+                </div>
+                <div class="restaurant">
+                    <img src="9.jfif" alt="Restaurant Image">
+                    <h3>Restaurant Name 2</h3>
+                    <p>Address: 456 Eatery Lane, City</p>
+                    <p>Rating: ★★★☆☆</p>
+                </div>
+                <div class="restaurant">
+                    <img src="10.jfif" alt="Restaurant Image">
+                    <h3>Restaurant Name 3</h3>
+                    <p>Address: 789 Dine Avenue, City</p>
+                    <p>Rating: ★★★★★</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popular Cuisines -->
+        <div class="section">
+            <h2>Popular Cuisines</h2>
+            <div class="cuisine-list">
+                <div class="cuisine">
+                    <img src="11.jfif" alt="Cuisine Image">
+                    <h3>Italian</h3>
+                </div>
+                <div class="cuisine">
+                    <img src="https://via.placeholder.com/300x200" alt="Cuisine Image">
+                    <h3>Chinese</h3>
+                </div>
+                <div class="cuisine">
+                    <img src="https://via.placeholder.com/300x200" alt="Cuisine Image">
+                    <h3>Indian</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Restaurant Finder. All rights reserved.</p>
+        <p>Contact us at: info@restaurantfinder.com</p>
+    </footer>
+</body>
+</html>
